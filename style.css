@@ -1,0 +1,243 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-image:url(./shara\ desert.jpg) ;
+}
+.logo{
+    height: 50px;
+    width: 50px;
+    position: relative;
+    top: 20px;
+    left: 30px;
+}
+nav{
+    /* display: inline-block; */
+    word-spacing: 40px;
+    /* color: black;
+    text-decoration: none; */
+    float: right;
+    position: relative;
+    bottom: 35px;
+}
+.menu{
+    /* margin-top: 30px; */
+    /* padding-top: 20px; */
+    position: relative;
+    top: 13px;
+    right: 60px;
+    /* left: 30px; */
+
+}
+.navbar{
+    margin-right: 90px;
+}
+a{
+    color: white;
+    text-decoration: none;
+    /* margin-right: 80px; */
+    box-sizing: border-box;
+}
+.mainsahara{
+    color: white;
+    width: 500px;
+    line-height: 23px;
+    /* margin-top: 500px; */
+    position: relative;
+    top: 260px;
+    left: 70px;
+}
+.sahara{
+    font-size: 60px;
+}
+.flex{
+    float: right;
+    margin-right: 80px;
+    position: relative;
+    bottom: 50px;
+}
+.flexcontainer {
+    display: flex;
+    /* float: right; */
+    flex-wrap: wrap;
+    gap: 40px;
+    position: relative;
+    bottom: 25px;
+
+    /* justify-content: space-evenly; */
+
+}
+input[type="button"]{
+    /* color: black; */
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 20px;
+    height: 40px;
+    width: 150px;
+    position: relative;
+    top: 35px;
+    /* margin-top: 30px; */
+    /* box-sizing: border-box; */
+}
+.item{
+    height: 220px;
+    width: 200px;
+    border-radius: 11px;
+    padding-top: 10px;
+    padding-left: 15px;
+    box-sizing: border-box;
+}
+.item:hover{
+    transition: all 1s;
+    transform:translateY(-13px)
+   
+    /* transform: translateY(10px); */
+    
+    /* width: 500px; */
+}
+.item1{
+   /* height: 150px;
+   width: 100px; */
+   background-image: url(./pic-1.png);
+   background-size: cover;
+   
+}
+.item2{
+    /* height: 150px;
+   width: 100px; */
+   background-image: url(./pic-2.png);
+   background-size: cover;
+}
+
+.item3{
+    /* height: 200px;
+   width: 150px; */
+   background-image: url(./pic-3.png);
+   background-size: cover;
+   
+}
+.item4{
+    /* height: 150px;
+   width: 100px; */
+   background-image: url(./pic-4.png);
+   background-size: cover;
+}
+.flexcontainer2{
+    display: flex;
+    /* flex-wrap: wrap; */
+    gap: 40px;
+    /* margin-top: 20px; */
+
+    
+}
+h6,h3{
+    color: white;
+}
+h6{
+    line-height: 23px;
+}
+/* media quary  */
+@media only screen and (min-width:150px) and (max-width:550px) {
+    body{
+        background-size:cover;
+    }
+    span{
+        display: flex;
+        flex-direction: column;
+    }
+    .menu{
+        position: relative;
+        left: 71px; 
+        top: -45px;
+        right: 0px;
+
+    }
+    
+    .mainsahara{
+        position: relative;
+        top: 45px;
+        width: 300px;
+        font-size: 15px;
+        left: 20px;
+        /* width: auto; */
+    }
+    .sahara{
+        font-size: 30px;
+    }
+    .flex{
+        float:none ;
+    }
+    .flexcontainer,.flexcontainer2{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        /* display: block; */
+        position: relative;
+        top: 134px;
+        left: 0px;
+        /* margin-right: 80px; */
+        align-content: center;
+        margin-top: 30px;
+        
+        /* align-items: center; */
+        /* vertical-align: middle; */
+    }
+    .flexcontainer2{
+        margin-top: 30px;
+    }
+    .logo{
+        height: 50px;
+        width: 50px;
+        position: relative;
+        top: 12px;
+        left: 20px;
+    }
+
+}
+@media only screen and (min-width:551px) and (max-width:900px) {
+    .mainsahara{
+        position: relative;
+        top: 45px;
+        width: 300px;
+        font-size: 15px;
+        left: 20px;
+        /* width: auto; */
+    }
+    .sahara{
+        font-size: 30px;
+    }
+    .flex{
+        float: none;
+    }
+    .flexcontainer,.flexcontainer2{
+        
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        /* display: block; */
+        position: relative;
+        top: 130px;
+        left: 0px;
+        align-content: center;
+        margin-top: 30px;
+    }
+    .flexcontainer2{
+        margin-top: 30px;
+    }
+    .item{
+        width: 450px;
+        
+    }
+    .item1,.item2,.item3,.item4{
+        background-size: cover;
+    }
+    .logo{
+        height: 50px;
+        width: 50px;
+        position: relative;
+        top: 12px;
+        left: 20px;
+    }
+
+}
